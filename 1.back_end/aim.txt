@@ -1,0 +1,9 @@
+1.GET VALUE IN USED 
+2.CONVERT TO ZAR
+3.PRINT ON SCREEN
+========================================
+USEFUL CALLS
+https://binance43.p.rapidapi.com/ticker/24hr
+https://binance43.p.rapidapi.com/avgPrice?symbol=ETHBTC
+=========================================
+HAVING TROUBLE CALLING THE REQUEST IN A LOOP.
