@@ -1,17 +1,37 @@
-<html>
-<head>
-<title>Crypto Investment App</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Investing App demo</title>
 </head>
-<body>
-<p><h1 align="center">Crypto Currency Investment App</h1></p>
-</div>
-<ul>
-    {% for i in data %}
-        <li>{{i}}</li>
-    {% endfor %}
-    </ul>
-</div>
-</body>
+  <body>
+    <h1>Crypto Investing App demo</h1>
+    <div class="card" style="width: 18rem;">
+        
+
+
+        {% for i in data %}
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{{i['icon_url']}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{i["name"]}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Symbol {{i["symbol"]}}</h6>
+                <p class="card-text">Price {{i["price"]}}</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      
+    </div>  
+
+
+  </body>
 </html>
