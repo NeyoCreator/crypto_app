@@ -5,20 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crypto Investing App demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
   <body>
     <h1>Crypto Investing App demo</h1>
-    <div class="card" style="width: 18rem;">
-        
-
-
+    <div class="card" style="width: 25rem;">
         {% for i in data %}
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="{{i['icon_url']}}" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8">  
               <div class="card-body">
                 <h5 class="card-title">{{i["name"]}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Symbol {{i["symbol"]}}</h6>
